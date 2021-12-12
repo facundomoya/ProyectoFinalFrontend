@@ -1,39 +1,9 @@
 {
   "cuentas": [
     {
-      "id": 2,
-      "nombre": "jorge",
-      "contrasena": "jorge",
-      "administrador": false
-    },
-    {
-      "id": 3,
-      "nombre": "pedrito",
-      "contrasena": "predito",
-      "administrador": false
-    },
-    {
-      "nombre": "Gonzalito",
-      "contrasena": "gonzalito",
-      "administrador": false,
-      "id": 4
-    },
-    {
-      "nombre": "gonzalito",
-      "contrasena": "gonzalito",
-      "administrador": false,
-      "id": 5
-    },
-    {
-      "nombre": "admin1",
-      "contrasena": "$2a$10$FUkzMIjb.u7N/IKW3ZgPsem/Bg4r1/BiWYMZ73hjy/JwDAxNEnWjO",
-      "administrador": false,
-      "id": 6
-    },
-    {
       "nombre": "admin",
       "contrasena": "$2a$10$rlhtmFkfRM0bQIZSqv8vwu.Sn8XYprehSyJhnz3Z/A2jg/z07RrT6",
-      "administrador": false,
+      "administrador": true,
       "id": 1
     }
   ]

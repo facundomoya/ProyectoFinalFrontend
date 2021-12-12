@@ -20,7 +20,7 @@ function CrearUsuario() {
     try {
       const respuesta = await fetch(URL);
       const datos = await respuesta.json();
-      setListaUsuarios(datos);//guardamos toda la lista de usuarios en el state para poder verificar mas adelante esto se tiene que hacer en el backend
+      setListaUsuarios(datos);//guardamos toda la lista de usuarios en el state para poder verificar, mas adelante esto se tiene que hacer en el backend
       
     } catch (error) {
       console.log(error);
