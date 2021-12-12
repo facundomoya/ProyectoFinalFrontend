@@ -1,11 +1,9 @@
-import "./App.css";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import { campoRequerido } from "./components/validaciones/helpers";
 
-function App() {
+function CrearUsuario() {
   var bcrypt = require('bcryptjs');
   const [listaUsuarios, setListaUsuarios] = useState([]);
   const URL = process.env.REACT_APP_API_URL;
@@ -30,7 +28,7 @@ function App() {
   };
 
   const handleSubmit = (e) => {
-    crearUsuario();
+    crearUsuarioNuevo();
   };
   const hashContrasena = (x)=>{
     bcrypt.genSalt(10, function(err, salt) {
@@ -50,7 +48,7 @@ function App() {
       return true;
     }
   }
-  const crearUsuario = async () => {
+  const crearUsuarioNuevo = async () => {
     if (campoRequerido(nombre) && campoRequerido(contrasena)) {
       if (validarNombreUsado(nombre)) {
         const usuarioNuevo = {
@@ -119,4 +117,4 @@ function App() {
   );
 }
 
-export default App;
+export default CrearUsuario;
