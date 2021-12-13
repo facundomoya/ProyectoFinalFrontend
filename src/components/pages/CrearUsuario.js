@@ -1,14 +1,16 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { useState, useEffect } from "react";
-import { campoRequerido } from "./components/validaciones/helpers";
+import { campoRequerido } from "../validaciones/helpers";
 
 function CrearUsuario() {
-  var bcrypt = require('bcryptjs');
+  var bcrypt = require("bcryptjs");
   const [listaUsuarios, setListaUsuarios] = useState([]);
   const URL = process.env.REACT_APP_API_URL;
   const [nombre, setNombre] = useState("");
   const [contrasena, setContrasena] = useState("");
+  const [email, setEmail] = useState("");
+  const [fotoURL, setFotoURL] = useState("");
   const [administrador, setAdminitrador] = useState(false);
 
   useEffect(() => {
@@ -20,8 +22,7 @@ function CrearUsuario() {
     try {
       const respuesta = await fetch(URL);
       const datos = await respuesta.json();
-      setListaUsuarios(datos);//guardamos toda la lista de usuarios en el state para poder verificar, mas adelante esto se tiene que hacer en el backend
-      
+      setListaUsuarios(datos); //guardamos toda la lista de usuarios en el state para poder verificar, mas adelante esto se tiene que hacer en el backend
     } catch (error) {
       console.log(error);
     }
@@ -30,14 +31,25 @@ function CrearUsuario() {
   const handleSubmit = (e) => {
     crearUsuarioNuevo();
   };
-  const hashContrasena = (x)=>{
-    bcrypt.genSalt(10, function(err, salt) {
-      bcrypt.hash(x, salt, function(err, hash) {
-          // Store hash in your password DB.
-          setContrasena(hash);
+  const hashContrasena = (x) => {
+    bcrypt.genSalt(10, function (err, salt) {
+      bcrypt.hash(x, salt, function (err, hash) {
+        // Store hash in your password DB.
+        setContrasena(hash);
       });
-  });
+    });
+  };
+  function validarEmailUsado(x) {
+    let a = listaUsuarios.find((b) => {
+      return b.email == x;
+    });
+    if (a !== undefined) {
+      return false;
+    } else {
+      return true;
+    }
   }
+
   function validarNombreUsado(x) {
     let a = listaUsuarios.find((b) => {
       return b.nombre === x;
@@ -49,25 +61,31 @@ function CrearUsuario() {
     }
   }
   const crearUsuarioNuevo = async () => {
-    if (campoRequerido(nombre) && campoRequerido(contrasena)) {
+    if (campoRequerido(nombre) && campoRequerido(contrasena) && campoRequerido(email) && campoRequerido(fotoURL)) {
       if (validarNombreUsado(nombre)) {
-        const usuarioNuevo = {
-          nombre,
-          contrasena,
-          administrador,
-        };
-        try {
-          const parametros = {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(usuarioNuevo),
+        if (validarEmailUsado(email)) {
+          const usuarioNuevo = {
+            nombre,
+            contrasena,
+            administrador,
+            email,
+            fotoURL,
           };
-          const repuesta = await fetch(URL, parametros);
-          console.log(repuesta);
-        } catch (error) {
-          console.log(error);
+          try {
+            const parametros = {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(usuarioNuevo),
+            };
+            const repuesta = await fetch(URL, parametros);
+            console.log(repuesta);
+          } catch (error) {
+            console.log(error);
+          }
+        } else {
+          alert("el email ya esta en uso bro");
         }
       } else {
         alert("nombre de usuario ya existe, por favor eliga otro nombre bro");
@@ -89,6 +107,26 @@ function CrearUsuario() {
                   placeholder="Ingrese su usuario a usar"
                   onChange={(e) => {
                     setNombre(e.target.value);
+                  }}
+                />
+              </Form.Group>
+              <Form.Group controlId="formGridEmail">
+                <Form.Label>Email</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Ingrese su email a usar"
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
+                />
+              </Form.Group>
+              <Form.Group controlId="formGridEmail">
+                <Form.Label>Foto de perfil</Form.Label>
+                <Form.Control
+                  type="text"
+                  placeholder="Ingrese url de su foto de perfil"
+                  onChange={(e) => {
+                    setFotoURL(e.target.value);
                   }}
                 />
               </Form.Group>

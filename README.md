@@ -4,3 +4,9 @@ JsonServer : json-server --watch db.json --port 3004
 ReactBoostrap:
 
 bcryp: npm install bcryptjs.
+
+
+COSAS PARA EN NAVBAR DE MAxi CORDOBA
+
+reactBoostrap:
+BoostrapIcons
