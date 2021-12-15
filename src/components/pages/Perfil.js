@@ -2,44 +2,45 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Form, Button, Container, Row, Col, Image } from "react-bootstrap";
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import {  useNavigate, Link } from "react-router-dom";
 
 
-const Perfil = () => {
+
+const Perfil = (props) => {
  const checkLog = JSON.parse(localStorage.getItem("usuarioLogeado")); 
-
+ let navigate = useNavigate();
  
- useEffect(async() => {
+ useEffect(() => {
     // botonDeslogear();
     //consultaAPI();
-   
+
   }, []);
- 
+
+  const volver = ()=>{
+    if(checkLog === null){
+      navigate("/")
+     }
+  }
 
     const handlerDeslogear = () => {
+ 
         localStorage.clear();
-        window.location.reload(false);
-
+ 
       };
 
 
     return (
         <div className="text-center">
+          {()=>{volver();}}
             <h3>Perfil de usuario</h3>
-            <Image src={checkLog.fotoURL} thumbnail className="w-50"/>
+            
             <div>
                 Vienvenido {checkLog.nombre}
             </div>
 
-
-            <Button
-          variant="dark"
-          type=""
-          className="my-2 w-25 "
-          onClick={handlerDeslogear}
-        >
-          Deslogear
-        </Button>
+          
+            
+        <Link to='/'className='btn btn-sm btn-outline-light ms-2 px-4 text-center' onClick={()=>{handlerDeslogear()}} >Deslogear</Link>
         </div>
     );
 };

@@ -9,4 +9,4 @@ bcryp: npm install bcryptjs.
 COSAS PARA EN NAVBAR DE MAxi CORDOBA
 
 reactBoostrap:
-BoostrapIcons
+BoostrapIcons:

@@ -10,7 +10,7 @@ function CrearUsuario() {
   const [nombre, setNombre] = useState("");
   const [contrasena, setContrasena] = useState("");
   const [email, setEmail] = useState("");
-  const [fotoURL, setFotoURL] = useState("");
+  
   const [administrador, setAdminitrador] = useState(false);
 
   useEffect(() => {
@@ -29,6 +29,7 @@ function CrearUsuario() {
   };
 
   const handleSubmit = (e) => {
+    e.preventDefault();
     crearUsuarioNuevo();
   };
   const hashContrasena = (x) => {
@@ -61,15 +62,14 @@ function CrearUsuario() {
     }
   }
   const crearUsuarioNuevo = async () => {
-    if (campoRequerido(nombre) && campoRequerido(contrasena) && campoRequerido(email) && campoRequerido(fotoURL)) {
+    if (campoRequerido(nombre) && campoRequerido(contrasena) && campoRequerido(email) ) {
       if (validarNombreUsado(nombre)) {
         if (validarEmailUsado(email)) {
           const usuarioNuevo = {
             nombre,
             contrasena,
             administrador,
-            email,
-            fotoURL,
+            email
           };
           try {
             const parametros = {
@@ -120,17 +120,6 @@ function CrearUsuario() {
                   }}
                 />
               </Form.Group>
-              <Form.Group controlId="formGridEmail">
-                <Form.Label>Foto de perfil</Form.Label>
-                <Form.Control
-                  type="text"
-                  placeholder="Ingrese url de su foto de perfil"
-                  onChange={(e) => {
-                    setFotoURL(e.target.value);
-                  }}
-                />
-              </Form.Group>
-
               <Form.Group controlId="formGridPassword">
                 <Form.Label>Contrasena</Form.Label>
                 <Form.Control
