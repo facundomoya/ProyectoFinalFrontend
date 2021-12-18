@@ -19,7 +19,7 @@ const Footer = () => {
                 className="text-decoration-none text-light"
                 href="https://goo.gl/maps/KoHzMiLqZQFKvdkX7"
               >
-                <i class="bi bi-pin-map"></i> Gral. Paz 576
+                <i class="bi bi-geo-alt-fill"></i> Gral. Paz 576
               </a>
               <li>
                 <i class="bi bi-globe2"></i> Tucumán, Argentina
@@ -28,8 +28,16 @@ const Footer = () => {
           </div>
           {/* Column2 */}
           <div className="col">
-            <h4>Links utiles</h4>
+            <h4>Informacion</h4>
             <ui className="list-unstyled">
+            <li>
+                <Link
+                  to="/error404"
+                  className="text-light text-decoration-none"
+                >
+                  Mapa del sitio
+                </Link>
+              </li>
               <li>
                 <Link
                   to="/error404"

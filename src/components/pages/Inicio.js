@@ -1,9 +1,12 @@
-import React, { Component } from 'react';
-import fondo from '../../img/coffee.jpg'
+import React from 'react';
+
 const Inicio = () => {
 
         return (
-            <img src={fondo} alt="Fondo de cafe" className='w-100'/>
+        <div className='text-center m-5 p-5'>
+            <h1> Esta es la Pagina de Inicio</h1>
+            
+        </div>
         );
     }
 

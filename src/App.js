@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Navigation/>
       <Routes>
-      <Route exact path='/' element={<Inicio></Inicio>}></Route>
+        <Route exact path='/' element={<Inicio></Inicio>}></Route>
         <Route exact path='*' element={<Error404></Error404>}></Route>
       </Routes>
       <Footer></Footer>
