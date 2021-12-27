@@ -1,7 +1,7 @@
 import React, { Component, useEffect, useState } from "react";
 import { Navbar, Nav, Container, NavDropdown, Modal, Button} from "react-bootstrap";
 import { useNavigate, Link } from "react-router-dom";
-import logo from '../../img/logo-rollingNews.png'
+import logo from '../../img/logo-rollingNews3.png'
 
 import Login from "../pages/Login.js";
 import Perfil from "../pages/Perfil.js";
@@ -38,11 +38,12 @@ const mostrarAlgo = ()=>{
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-      <Link to= '/' className='navbar-brand'>RollingNews</Link>
+      <Link to= '/'>
+      <img src={logo} alt="Logo rollingNews" className='w-50'/>
+      </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
-          <Link to= '/' className='nav-link text-light'>Inicio</Link>
           <Link to= '/error404' className='nav-link'>Actualidad</Link>
           <Link to= '/' className='nav-link'>Tecnología</Link>
           <Link to= '/' className='nav-link'>Espectáculos</Link>
