@@ -29,7 +29,7 @@
       "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "desarrollo": "titulo 6",
       "autor": "Gonzalo Cainzo",
-      "categoria": "2",
+      "tipo": "2",
       "fecha": 1639691310922,
       "fechaGuardar": "Thu Dec 16 2021 18:48:30 GMT-0300 (hora estándar de Argentina)",
       "id": 63
@@ -40,7 +40,7 @@
       "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "desarrollo": "desarrollo0",
       "autor": "Gonzalo Cainzo",
-      "categoria": "3",
+      "tipo": "3",
       "fecha": 1639692379014,
       "fechaGuardar": "Thu Dec 16 2021 19:06:19 GMT-0300 (hora estándar de Argentina)",
       "id": 66
@@ -51,7 +51,7 @@
       "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "desarrollo": "desarrollo90",
       "autor": "Gonzalo Cainzo",
-      "categoria": "4",
+      "tipo": "4",
       "fecha": 1639692391898,
       "fechaGuardar": "Thu Dec 16 2021 19:06:31 GMT-0300 (hora estándar de Argentina)",
       "id": 67
@@ -62,7 +62,7 @@
       "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "desarrollo": "444",
       "autor": "Gonzalo Cainzo",
-      "categoria": "3",
+      "tipo": "3",
       "fecha": 1639692769174,
       "fechaGuardar": "Thu Dec 16 2021 19:12:49 GMT-0300 (hora estándar de Argentina)",
       "id": 69
@@ -73,7 +73,7 @@
       "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "desarrollo": "5555",
       "autor": "Gonzalo Cainzo",
-      "categoria": "4",
+      "tipo": "4",
       "fecha": 1639692779625,
       "fechaGuardar": "Thu Dec 16 2021 19:12:59 GMT-0300 (hora estándar de Argentina)",
       "id": 70
@@ -84,7 +84,7 @@
       "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "desarrollo": "6969",
       "autor": "gonzalo",
-      "categoria": "5",
+      "tipo": "5",
       "fecha": 1639693007379,
       "fechaGuardar": "Thu Dec 16 2021 19:16:47 GMT-0300 (hora estándar de Argentina)",
       "id": 71
@@ -95,7 +95,7 @@
       "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "desarrollo": "123123123",
       "autor": "Gonzalo",
-      "categoria": "8",
+      "tipo": "8",
       "fecha": 1639693710015,
       "fechaGuardar": "Thu Dec 16 2021 19:28:30 GMT-0300 (hora estándar de Argentina)",
       "id": 72
@@ -106,7 +106,7 @@
       "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "desarrollo": "7878",
       "autor": "gonzalo",
-      "categoria": "8",
+      "tipo": "8",
       "fecha": 1639693724791,
       "fechaGuardar": "Thu Dec 16 2021 19:28:44 GMT-0300 (hora estándar de Argentina)",
       "id": 73
@@ -117,7 +117,7 @@
       "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "desarrollo": "777",
       "autor": "gonzalo777",
-      "categoria": "8",
+      "tipo": "8",
       "fecha": 1639693724791,
       "fechaGuardar": "Thu Dec 16 2021 19:28:44 GMT-0300 (hora estándar de Argentina)",
       "id": 74
@@ -128,7 +128,7 @@
       "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "desarrollo": "77799",
       "autor": "gonzalo77799",
-      "categoria": "8",
+      "tipo": "8",
       "fecha": 1639693836793,
       "fechaGuardar": "Thu Dec 16 2021 19:30:36 GMT-0300 (hora estándar de Argentina)",
       "id": 75
@@ -139,7 +139,7 @@
       "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "desarrollo": "777990",
       "autor": "gonzalo777990",
-      "categoria": "8",
+      "tipo": "8",
       "fecha": 1639693842598,
       "fechaGuardar": "Thu Dec 16 2021 19:30:42 GMT-0300 (hora estándar de Argentina)",
       "id": 76
@@ -150,7 +150,7 @@
       "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "desarrollo": "s3ws3s3s3",
       "autor": "gonzalos3s3s3",
-      "categoria": "1",
+      "tipo": "1",
       "fecha": 1639693951287,
       "fechaGuardar": "Thu Dec 16 2021 19:32:31 GMT-0300 (hora estándar de Argentina)",
       "id": 77
