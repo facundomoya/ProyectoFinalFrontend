@@ -26,7 +26,7 @@ const Navigation = () => {
         </Nav>
         <Nav>
           <Link to= '/' className='nav-link text-light'>Contacto</Link>
-          <Link to= '/' className='nav-link text-light'>Nosotros</Link>
+          <Link to= '*' className='nav-link text-light'>Nosotros</Link>
           <Link to='/' className='btn btn-sm btn-outline-light ms-2'> <i class="bi bi-person-fill"></i> Login</Link>
           <Link to='/' className='btn btn-sm btn-danger ms-2'>Suscribirse</Link>
         </Nav>
