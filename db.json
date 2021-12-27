@@ -154,6 +154,39 @@
       "fecha": 1639693951287,
       "fechaGuardar": "Thu Dec 16 2021 19:32:31 GMT-0300 (hora estándar de Argentina)",
       "id": 77
+    },
+    {
+      "titulo": "aaaaaa",
+      "subTitulo": "asdsdqwedasd",
+      "imagenPrincial": "https://www.pexels.com/es-es/foto/persona-telefono-inteligente-libros-escritorio-5704404/",
+      "desarrollo": "asdsfsdñlfkdlffñsdlfksñdlfksñdlfklsdñfksñdlf. añlsdklñsakdñlaskdñlaksñld añsldkñaslkdñlskaldkasd lasñdakdñlakdñslkdñaslkda",
+      "autor": "Maxi",
+      "categoria": "9",
+      "fecha": 1640632734816,
+      "fechaGuardar": "Mon Dec 27 2021 16:18:54 GMT-0300 (hora estándar de Argentina)",
+      "id": 78
+    },
+    {
+      "titulo": "Cine",
+      "subTitulo": "aaaaaa",
+      "imagenPrincial": "https://www.pexels.com/es-es/foto/persona-telefono-inteligente-libros-escritorio-5704404/",
+      "desarrollo": "aaaaaaaaa",
+      "autor": "aaaaaa",
+      "categoria": "6",
+      "fecha": 1640633107458,
+      "fechaGuardar": "Mon Dec 27 2021 16:25:07 GMT-0300 (hora estándar de Argentina)",
+      "id": 79
+    },
+    {
+      "titulo": "aaaaaa",
+      "subTitulo": "aaaaaaa",
+      "imagenPrincial": "https://images.pexels.com/photos/5704404/pexels-photo-5704404.jpeg?cs=srgb&dl=pexels-anastasia-shuraeva-5704404.jpg&fm=jpg",
+      "desarrollo": "aaaaaaaaaaa",
+      "autor": "aaaaaaaa",
+      "categoria": "5",
+      "fecha": 1640633336785,
+      "fechaGuardar": "Mon Dec 27 2021 16:28:56 GMT-0300 (hora estándar de Argentina)",
+      "id": 80
     }
   ],
   "categorias": [
@@ -188,6 +221,14 @@
     {
       "categoria": "Fotografia",
       "id": 8
+    },
+    {
+      "categoria": "Cine",
+      "id": 9
+    },
+    {
+      "categoria": "Cine",
+      "id": 10
     }
   ]
 }

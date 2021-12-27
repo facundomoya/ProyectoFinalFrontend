@@ -72,7 +72,7 @@ const mostrarTabla = ()=>{
 
   return (
     <Container className="my-5">
-      <h1>VIENVENIDO AL PERFIL DE AMINISTRADOR</h1>
+      <h1>BIENVENIDO AL PERFIL DE AMINISTRADOR</h1>
       <h3>
         Aqui vas a poder  crear noticias, tambien ver y editar noticias que estan cargadas
         en este sitio{" "}

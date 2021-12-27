@@ -20,7 +20,7 @@ const Perfil = (props) => {
     <div className="text-center">
       <h3>Perfil de usuario</h3>
 
-      <div>Vienvenido {checkLog.nombre}</div>
+      <div>Bienvenido {checkLog.nombre}</div>
       <Link
         to="/"
         className="btn btn-sm btn-outline-light ms-2 px-4 text-center"

@@ -39,7 +39,7 @@ const crearCategoria= async()=>{
     return (
         <Container>
             <Form onSubmit={handleSubmit}>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Group className="m-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Ingrese la nueva categoria</Form.Label>
               <Form.Control type="text" placeholder="" 
               onChange={(e) => {setCategoria(e.target.value);}}
@@ -47,7 +47,7 @@ const crearCategoria= async()=>{
               />
             </Form.Group>
             
-            <Button variant="primary" type="submit" className="w-100">
+            <Button variant="primary" type="submit" className="w-100 my-2">
                 Guardar categoria
             </Button>
           </Form>

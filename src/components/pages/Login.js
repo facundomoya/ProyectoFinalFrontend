@@ -36,7 +36,7 @@ function Login(props) {
       bcrypt.compare(contrasenaIngresada, a.contrasena, function (err, res) {
         // res === true
         if (res === true) {
-          alert("Vienvenido " + a.nombre);
+          alert("Bienvenido " + a.nombre);
           localStorage.setItem(
             "usuarioLogeado",
             JSON.stringify(a)
