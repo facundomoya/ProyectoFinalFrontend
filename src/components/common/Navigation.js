@@ -44,7 +44,7 @@ const mostrarAlgo = ()=>{
         <Nav className="me-auto">
           <Link to= '/' className='nav-link text-light'>Inicio</Link>
           <Link to= '/error404' className='nav-link'>Actualidad</Link>
-          <Link to= '/crearnoticia' className='nav-link'>EDITAR(Tecnología)</Link>
+          <Link to= '/' className='nav-link'>Tecnología</Link>
           <Link to= '/' className='nav-link'>Espectáculos</Link>
           <Link to= '/' className='nav-link'>Deportes</Link>
             <NavDropdown title="Más categorías" id="nav-dropdown-dark-example" menuVariant="dark">

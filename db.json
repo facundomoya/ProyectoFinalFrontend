@@ -24,24 +24,170 @@
   ],
   "noticias": [
     {
-      "titulo": "admin",
-      "subtitulo": "$2a$10$rlhtmFkfRM0bQIZSqv8vwu.Sn8XYprehSyJhnz3Z/A2jg/z07RrT6",
-      "imagenPrincial": "",
-      "desarrollo": "",
-      "autor": "",
-      "categoria": "",
-      "fecha": 0,
+      "titulo": "titulo 6",
+      "subTitulo": "titulo 6",
+      "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "desarrollo": "titulo 6",
+      "autor": "Gonzalo Cainzo",
+      "categoria": "2",
+      "fecha": 1639691310922,
+      "fechaGuardar": "Thu Dec 16 2021 18:48:30 GMT-0300 (hora estándar de Argentina)",
+      "id": 63
+    },
+    {
+      "titulo": "titulo0",
+      "subTitulo": "titulo0",
+      "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "desarrollo": "desarrollo0",
+      "autor": "Gonzalo Cainzo",
+      "categoria": "3",
+      "fecha": 1639692379014,
+      "fechaGuardar": "Thu Dec 16 2021 19:06:19 GMT-0300 (hora estándar de Argentina)",
+      "id": 66
+    },
+    {
+      "titulo": "titulo90",
+      "subTitulo": "titulo90",
+      "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "desarrollo": "desarrollo90",
+      "autor": "Gonzalo Cainzo",
+      "categoria": "4",
+      "fecha": 1639692391898,
+      "fechaGuardar": "Thu Dec 16 2021 19:06:31 GMT-0300 (hora estándar de Argentina)",
+      "id": 67
+    },
+    {
+      "titulo": "444",
+      "subTitulo": "4444",
+      "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "desarrollo": "444",
+      "autor": "Gonzalo Cainzo",
+      "categoria": "3",
+      "fecha": 1639692769174,
+      "fechaGuardar": "Thu Dec 16 2021 19:12:49 GMT-0300 (hora estándar de Argentina)",
+      "id": 69
+    },
+    {
+      "titulo": "555",
+      "subTitulo": "5555",
+      "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "desarrollo": "5555",
+      "autor": "Gonzalo Cainzo",
+      "categoria": "4",
+      "fecha": 1639692779625,
+      "fechaGuardar": "Thu Dec 16 2021 19:12:59 GMT-0300 (hora estándar de Argentina)",
+      "id": 70
+    },
+    {
+      "titulo": "6969",
+      "subTitulo": "6969",
+      "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "desarrollo": "6969",
+      "autor": "gonzalo",
+      "categoria": "5",
+      "fecha": 1639693007379,
+      "fechaGuardar": "Thu Dec 16 2021 19:16:47 GMT-0300 (hora estándar de Argentina)",
+      "id": 71
+    },
+    {
+      "titulo": "123123123",
+      "subTitulo": "123123123",
+      "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "desarrollo": "123123123",
+      "autor": "Gonzalo",
+      "categoria": "8",
+      "fecha": 1639693710015,
+      "fechaGuardar": "Thu Dec 16 2021 19:28:30 GMT-0300 (hora estándar de Argentina)",
+      "id": 72
+    },
+    {
+      "titulo": "7878",
+      "subTitulo": "7878",
+      "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "desarrollo": "7878",
+      "autor": "gonzalo",
+      "categoria": "8",
+      "fecha": 1639693724791,
+      "fechaGuardar": "Thu Dec 16 2021 19:28:44 GMT-0300 (hora estándar de Argentina)",
+      "id": 73
+    },
+    {
+      "titulo": "777",
+      "subTitulo": "777",
+      "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "desarrollo": "777",
+      "autor": "gonzalo777",
+      "categoria": "8",
+      "fecha": 1639693724791,
+      "fechaGuardar": "Thu Dec 16 2021 19:28:44 GMT-0300 (hora estándar de Argentina)",
+      "id": 74
+    },
+    {
+      "titulo": "77799",
+      "subTitulo": "77799",
+      "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "desarrollo": "77799",
+      "autor": "gonzalo77799",
+      "categoria": "8",
+      "fecha": 1639693836793,
+      "fechaGuardar": "Thu Dec 16 2021 19:30:36 GMT-0300 (hora estándar de Argentina)",
+      "id": 75
+    },
+    {
+      "titulo": "777990",
+      "subTitulo": "777990",
+      "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "desarrollo": "777990",
+      "autor": "gonzalo777990",
+      "categoria": "8",
+      "fecha": 1639693842598,
+      "fechaGuardar": "Thu Dec 16 2021 19:30:42 GMT-0300 (hora estándar de Argentina)",
+      "id": 76
+    },
+    {
+      "titulo": "s3s3s3s3",
+      "subTitulo": "s3s3s3s3",
+      "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "desarrollo": "s3ws3s3s3",
+      "autor": "gonzalos3s3s3",
+      "categoria": "1",
+      "fecha": 1639693951287,
+      "fechaGuardar": "Thu Dec 16 2021 19:32:31 GMT-0300 (hora estándar de Argentina)",
+      "id": 77
+    }
+  ],
+  "categorias": [
+    {
+      "categoria": "Politica",
       "id": 1
     },
     {
-      "titulo": "Este es el titulo de la noticia",
-      "subTitulo": "Este es el Subtitulo de la notica",
-      "imagenPrincial": "https://images.pexels.com/photos/7072604/pexels-photo-7072604.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      "desarrollo": "Este es el desarrollo de la notica mi ray",
-      "autor": "Gonzalo Cainzo",
-      "categoria": "Actualidad",
-      "fecha": 1639594055072,
+      "categoria": "Deportes",
       "id": 2
+    },
+    {
+      "categoria": "Salud",
+      "id": 3
+    },
+    {
+      "categoria": "Actulidad",
+      "id": 4
+    },
+    {
+      "categoria": "Espectaculos",
+      "id": 5
+    },
+    {
+      "categoria": "Tecnologia",
+      "id": 6
+    },
+    {
+      "categoria": "Economia",
+      "id": 7
+    },
+    {
+      "categoria": "Fotografia",
+      "id": 8
     }
   ]
 }
