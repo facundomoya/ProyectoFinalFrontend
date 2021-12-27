@@ -12,7 +12,13 @@ const Footer = () => {
             <h4>Informacion de contacto</h4>
             <ul className='list-unstyled'>
               <li><i class="bi bi-whatsapp"></i> (0381)-152661535</li>
-              <li><i class="bi bi-pin-map"></i> Gral. Paz 576</li>
+              <li><a
+                target="_blank"
+                className="text-decoration-none text-light"
+                href="https://goo.gl/maps/KoHzMiLqZQFKvdkX7"
+              >
+                <i class="bi bi-geo-alt-fill"></i> Gral. Paz 576
+              </a></li>
               <li><i class="bi bi-globe2"></i> Tucumán, Argentina</li>
             </ul>
           </div>
