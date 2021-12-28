@@ -41,7 +41,7 @@ const Noticia = (props) => {
   const mostrarBotonEditar = () => {
     if (checkLog != null) {
       if (checkLog.administrador) {
-        return <Link to={`/editar/${id}`}> asdasdasd</Link>;
+        return <Link className="text-decoration-none" to={`/editar/${id}`}> Editar</Link>;
       } else {
       }
     } else {
