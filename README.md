@@ -4,7 +4,8 @@ Este proyecto es un diario digital llamado Rolling News creado con React, React-
 
 ## DEMO
 
-[Link del repo]
+[GitHub](https://github.com/facundomoya/ProyectoFinalFrontend.git)
+[Link Netlify]()
 
 ## Librerias externas
 

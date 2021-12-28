@@ -20,6 +20,48 @@
       "administrador": false,
       "email": "gonzalo@gmail.com",
       "id": 4
+    },
+    {
+      "nombre": "asdasdasd",
+      "contrasena": "$2a$10$5KGdQrmFU2AI6GP/1QjzH.Bf8ll2GexjftnOp7kqXtkXTGVVwIPqC",
+      "administrador": false,
+      "email": "asdasd@gmail.com",
+      "id": 5
+    },
+    {
+      "nombre": "asdasdasd",
+      "contrasena": "$2a$10$5KGdQrmFU2AI6GP/1QjzH.Bf8ll2GexjftnOp7kqXtkXTGVVwIPqC",
+      "administrador": false,
+      "email": "asdasd@gmail.com",
+      "id": 6
+    },
+    {
+      "nombre": "asdasdasd",
+      "contrasena": "$2a$10$5KGdQrmFU2AI6GP/1QjzH.Bf8ll2GexjftnOp7kqXtkXTGVVwIPqC",
+      "administrador": false,
+      "email": "asdasd@gmail.com",
+      "id": 7
+    },
+    {
+      "nombre": "admin3",
+      "contrasena": "$2a$10$cuF7bSta.qkT6urkwc74Y.jiESEWi.Aqylu/6/Vs1wuAzIGZsD0J6",
+      "administrador": false,
+      "email": "asdasdasd@gmail.com",
+      "id": 8
+    },
+    {
+      "nombre": "admin8",
+      "contrasena": "$2a$10$cuF7bSta.qkT6urkwc74Y.jiESEWi.Aqylu/6/Vs1wuAzIGZsD0J6",
+      "administrador": false,
+      "email": "asdasdasdk@gmail.com",
+      "id": 9
+    },
+    {
+      "nombre": "admin5",
+      "contrasena": "$2a$10$AvL9HbYxMKuAXvbyb6JoE.UsVW8LPFxCILqrHs6fKLcvLZOhE5i7K",
+      "administrador": false,
+      "email": "asdasda@gmail.com",
+      "id": 10
     }
   ],
   "noticias": [
