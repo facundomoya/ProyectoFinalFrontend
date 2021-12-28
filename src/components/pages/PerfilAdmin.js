@@ -22,6 +22,7 @@ const PerfilAdmin = (props) => {
   const [filtrarCategoria, setFiltrarCategoria] = useState("0");
   const [ordenarFecha, setOrdenarFecha] = useState(true);
   const [nuevoArrayNoticias, setNuevoArrayNoticias] = useState([]);
+  
 
   useEffect(() => {
     props.consultaAPI();
@@ -29,10 +30,12 @@ const PerfilAdmin = (props) => {
   }, []);
 
   function comparar(a, b) {
-    return b.fecha - a.fecha;
+    
+    
+    return  Date.parse(b.fecha) - Date.parse(a.fecha);
   }
   function comparar2(a, b) {
-    return a.fecha - b.fecha;
+    return  Date.parse(a.fecha) - Date.parse(b.fecha);
   }
   const masViejoArriba = () => {
     if (ordenarFecha === true) {
