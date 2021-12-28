@@ -45,11 +45,11 @@ const mostrarAlgo = ()=>{
         <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
           <Link to= '/error404' className='nav-link'>Actualidad</Link>
-          <Link to= '/' className='nav-link'>Tecnología</Link>
-          <Link to= '/' className='nav-link'>Espectáculos</Link>
-          <Link to= '/' className='nav-link'>Deportes</Link>
+          <Link to= '/error404' className='nav-link'>Tecnología</Link>
+          <Link to= '/error404' className='nav-link'>Espectáculos</Link>
+          <Link to= '/error404' className='nav-link'>Deportes</Link>
             <NavDropdown title="Más categorías" id="nav-dropdown-dark-example" menuVariant="dark">
-            <NavDropdown.Item as={Link} to="/">Política</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/error404">Política</NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/">Economía</NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/">Salud</NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/">Fotografía</NavDropdown.Item>

@@ -125,7 +125,7 @@ function comparar ( a, b ){ return a.fecha - b.fecha }
         ></Route>
 
 
-        <Route exact path="*" element={<Error404></Error404>}></Route>
+        <Route exact path="/error404" element={<Error404></Error404>}></Route>
         <Route exact path="/contacto" element={<Contacto></Contacto>}></Route>
         <Route exact path="/nosotros" element={<Nosotros></Nosotros>}></Route>
       </Routes>
