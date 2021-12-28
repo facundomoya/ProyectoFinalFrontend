@@ -1,18 +1,24 @@
 import React, { useState, useEffect } from "react";
 import { Form, Button, Container, Row, Col, Image } from "react-bootstrap";
 import { campoRequerido, datoRequerido, validarEmail, validarUrl } from "../validaciones/helpers";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
+
+
 
 const CrearCategoria = () => {
 const [categoria, setCategoria] = useState('');
 const URL = 'http://localhost:3004/categorias';
+const navigation = useNavigate();
+
+
 
 
 const handleSubmit =(e)=>{
     e.preventDefault();
     crearCategoria();
 };
-
-const crearCategoria= async()=>{
+const crearCategoria= async(e)=>{
     if(datoRequerido(categoria)){
         const categoriaNueva = {
             categoria
@@ -26,7 +32,17 @@ const crearCategoria= async()=>{
               body: JSON.stringify(categoriaNueva),
             };
             const repuesta = await fetch(URL, parametros);
-            console.log(repuesta);
+            if(repuesta.status === 201){
+              console.log('El producto se cargo correctamene')
+              Swal.fire(
+                'Nueva categoria creada',
+                'La categoria fue correctamente creada',
+                'success'
+              )
+              navigation("/Perfil");
+            }else{
+              console.log('La categoria no se creo correctamene')
+            }
           } catch (error) {
             console.log(error);
           }

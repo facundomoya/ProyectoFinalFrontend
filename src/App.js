@@ -11,6 +11,7 @@ import PerfilAdmin from "./components/pages/PerfilAdmin";
 import { useState, useEffect } from "react";
 import CrearNoticia from "./components/pages/CrearNoticia";
 import CrearCategoria from "./components/pages/CrearCategoria";
+import EditarNoticia from "./components/pages/EditarNoticia";
 
 function App() {
   const [estaLogeado, setEstalLogeado] = useState();
@@ -92,7 +93,7 @@ function comparar ( a, b ){ return a.fecha - b.fecha }
         <Route
           exact
           path="/crearcategoria"
-          element={<CrearCategoria>categorias={categorias}</CrearCategoria>}
+          element={<CrearCategoria categorias={categorias} ></CrearCategoria>}
         ></Route>
       );
     } else {
@@ -116,6 +117,10 @@ function comparar ( a, b ){ return a.fecha - b.fecha }
         {redirPerfil()}
         {redirCrearNoticia()}
         {redirCrearCategoria()}
+        <Route
+          path="/editar/:id"
+          element={<EditarNoticia noticias={noticias} categorias={categorias} consultaAPI={consultaAPI}></EditarNoticia>}
+        ></Route>
 
 
         <Route exact path="*" element={<Error404></Error404>}></Route>

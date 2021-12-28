@@ -24,14 +24,14 @@
   ],
   "noticias": [
     {
-      "titulo": "titulo 6",
+      "titulo": "69420",
       "subTitulo": "titulo 6",
       "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-      "desarrollo": "titulo 6",
+      "desarrollo": "titulo 69420",
       "autor": "Gonzalo Cainzo",
       "tipo": "2",
-      "fecha": 1639691310922,
-      "fechaGuardar": "Thu Dec 16 2021 18:48:30 GMT-0300 (hora estándar de Argentina)",
+      "fecha": 1639692379014,
+      "fechaGuardar": "Thu Dec 16 2021 19:06:19 GMT-0300 (hora estándar de Argentina)",
       "id": 63
     },
     {
@@ -112,7 +112,7 @@
       "id": 73
     },
     {
-      "titulo": "777",
+      "titulo": "666",
       "subTitulo": "777",
       "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "desarrollo": "777",
@@ -161,7 +161,7 @@
       "imagenPrincial": "https://www.pexels.com/es-es/foto/persona-telefono-inteligente-libros-escritorio-5704404/",
       "desarrollo": "asdsfsdñlfkdlffñsdlfksñdlfksñdlfklsdñfksñdlf. añlsdklñsakdñlaskdñlaksñld añsldkñaslkdñlskaldkasd lasñdakdñlakdñslkdñaslkda",
       "autor": "Maxi",
-      "categoria": "9",
+      "tipo": "9",
       "fecha": 1640632734816,
       "fechaGuardar": "Mon Dec 27 2021 16:18:54 GMT-0300 (hora estándar de Argentina)",
       "id": 78
@@ -172,7 +172,7 @@
       "imagenPrincial": "https://www.pexels.com/es-es/foto/persona-telefono-inteligente-libros-escritorio-5704404/",
       "desarrollo": "aaaaaaaaa",
       "autor": "aaaaaa",
-      "categoria": "6",
+      "tipo": "6",
       "fecha": 1640633107458,
       "fechaGuardar": "Mon Dec 27 2021 16:25:07 GMT-0300 (hora estándar de Argentina)",
       "id": 79
@@ -183,7 +183,7 @@
       "imagenPrincial": "https://images.pexels.com/photos/5704404/pexels-photo-5704404.jpeg?cs=srgb&dl=pexels-anastasia-shuraeva-5704404.jpg&fm=jpg",
       "desarrollo": "aaaaaaaaaaa",
       "autor": "aaaaaaaa",
-      "categoria": "5",
+      "tipo": "5",
       "fecha": 1640633336785,
       "fechaGuardar": "Mon Dec 27 2021 16:28:56 GMT-0300 (hora estándar de Argentina)",
       "id": 80
@@ -227,7 +227,7 @@
       "id": 9
     },
     {
-      "categoria": "Cine",
+      "categoria": "caca",
       "id": 10
     }
   ]

@@ -44,7 +44,7 @@ const ItemNoticia = (props) => {
     });
   }
   const cambiarCategoria = ()=>{
-      let a = props.noticia.categoria;
+      let a = props.noticia.tipo;
       let b = props.categorias;
       let x = b.map((c) => {
         if (c.id == a) {
@@ -62,7 +62,7 @@ const ItemNoticia = (props) => {
         <div>
           <Link
             className="btn btn-warning me-2"
-            to={`/productos/editar/${props.noticia.id}`}
+            to={`/editar/${props.noticia.id}`}
           >
             Editar
           </Link>
