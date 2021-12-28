@@ -9,7 +9,7 @@ const CrearNoticia = (props) => {
   const [imagenPrincial, setImagenPrincial] = useState('');
   const [desarrollo, setDesarrollo] = useState('');
   const [autor, setAutor] = useState('');
-  const [categoria, setCategoria] = useState('');
+  const [tipo, setTipo] = useState('');
   const [fecha, setFecha] = useState(0);
   const [fechaGuardar, setFechaGuardar] = useState('');
   const URL = 'http://localhost:3004/noticias';
@@ -34,7 +34,7 @@ const CrearNoticia = (props) => {
     
   }
   const crearNoticia = async()=>{
-    if (datoRequerido(titulo) && datoRequerido(subTitulo) && datoRequerido(imagenPrincial)&& datoRequerido(desarrollo)&& datoRequerido(autor) && datoRequerido(categoria)) {
+    if (datoRequerido(titulo) && datoRequerido(subTitulo) && datoRequerido(imagenPrincial)&& datoRequerido(desarrollo)&& datoRequerido(autor) && datoRequerido(tipo)) {
      
 
           
@@ -44,7 +44,7 @@ const CrearNoticia = (props) => {
             imagenPrincial,
             desarrollo,
             autor,
-            categoria,
+            tipo,
             fecha,
             fechaGuardar
           };
@@ -101,7 +101,7 @@ const CrearNoticia = (props) => {
               onChange={(e) => {setDesarrollo(e.target.value);}}
               onBlur={(e)=>{campoRequerido(e.target)}}/>
             </Form.Group>
-            <Form.Select aria-label="Default select example" onChange={(e)=>{setCategoria(e.target.value)}}>
+            <Form.Select aria-label="Default select example" onChange={(e)=>{setTipo(e.target.value)}}>
               <option value="">Seleccione una categoria</option>
               {props.categorias.map((categoria)=>{return <option value={categoria.id}>{categoria.categoria}</option>})}
             </Form.Select>
@@ -121,7 +121,7 @@ const CrearNoticia = (props) => {
         <Row >
         <h3>Vista previa</h3>
         <Col className="my-5 bg-light border shadow-lg">
-          <p className="p-2 text-secondary ">{categoria}</p> 
+          <p className="p-2 text-secondary ">{tipo}</p> 
                   <Container className="text-start">
                   <h1 className="mt-5" >{titulo}</h1>
                   <h5>{subTitulo}</h5>

@@ -11,6 +11,7 @@ import PerfilAdmin from "./components/pages/PerfilAdmin";
 import { useState, useEffect } from "react";
 import CrearNoticia from "./components/pages/CrearNoticia";
 import CrearCategoria from "./components/pages/CrearCategoria";
+import EditarNoticia from "./components/pages/EditarNoticia";
 import Contacto from './components/pages/Contacto';
 import Nosotros from './components/pages/Nosotros';
 
@@ -18,8 +19,8 @@ function App() {
   const [estaLogeado, setEstalLogeado] = useState();
   const [noticias, setNoticias] = useState([]);
   const [categorias, setCategorias] = useState([]);
-  const URLnoticias = "http://localhost:3004/noticias"
-  const URLcategorias = "http://localhost:3004/categorias"
+  const URLnoticias = "https://proyectofinalbackend.herokuapp.com/apinoticias/"
+  const URLcategorias = "https://proyectofinalbackend.herokuapp.com/apicategoria/"
   let checkLog = JSON.parse(localStorage.getItem("usuarioLogeado"));
  
 
@@ -94,7 +95,7 @@ function comparar ( a, b ){ return a.fecha - b.fecha }
         <Route
           exact
           path="/crearcategoria"
-          element={<CrearCategoria>categorias={categorias}</CrearCategoria>}
+          element={<CrearCategoria categorias={categorias} ></CrearCategoria>}
         ></Route>
       );
     } else {
@@ -118,6 +119,10 @@ function comparar ( a, b ){ return a.fecha - b.fecha }
         {redirPerfil()}
         {redirCrearNoticia()}
         {redirCrearCategoria()}
+        <Route
+          path="/editar/:id"
+          element={<EditarNoticia noticias={noticias} categorias={categorias} consultaAPI={consultaAPI}></EditarNoticia>}
+        ></Route>
 
 
         <Route exact path="*" element={<Error404></Error404>}></Route>
