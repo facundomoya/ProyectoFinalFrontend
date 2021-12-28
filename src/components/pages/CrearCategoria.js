@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 const CrearCategoria = () => {
 const [categoria, setCategoria] = useState('');
-const URL = 'http://localhost:3004/categorias';
+const URL = 'https://proyectofinal16igrupo2.herokuapp.com/apicategoria';
 const navigation = useNavigate();
 
 

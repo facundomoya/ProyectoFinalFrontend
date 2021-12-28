@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
 
 const ItemNoticia = (props) => {
-  const URL = "http://localhost:3004/noticias" + "/" + props.noticia.id;
+  const URL = "https://proyectofinal16igrupo2.herokuapp.com/apinoticias" + "/" + props.noticia._id;
 
   function eliminarProducto() {
     Swal.fire({
@@ -47,7 +47,7 @@ const ItemNoticia = (props) => {
       let a = props.noticia.tipo;
       let b = props.categorias;
       let x = b.map((c) => {
-        if (c.id == a) {
+        if (c.categoria == a) {
           return c.categoria;
         }
       });
@@ -62,7 +62,7 @@ const ItemNoticia = (props) => {
         <div>
           <Link
             className="btn btn-warning me-2"
-            to={`/editar/${props.noticia.id}`}
+            to={`/editar/${props.noticia._id}`}
           >
             Editar
           </Link>

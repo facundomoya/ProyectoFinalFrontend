@@ -12,7 +12,7 @@ const CrearNoticia = (props) => {
   const [tipo, setTipo] = useState('');
   const [fecha, setFecha] = useState(0);
   const [fechaGuardar, setFechaGuardar] = useState('');
-  const URL = 'http://localhost:3004/noticias';
+  const URL = 'https://proyectofinal16igrupo2.herokuapp.com/apinoticias';
   let current = new Date;
   let currentGuardar = current.valueOf();
   let date = current.toString();
@@ -34,10 +34,7 @@ const CrearNoticia = (props) => {
     
   }
   const crearNoticia = async()=>{
-    if (datoRequerido(titulo) && datoRequerido(subTitulo) && datoRequerido(imagenPrincial)&& datoRequerido(desarrollo)&& datoRequerido(autor) && datoRequerido(tipo)) {
-     
-
-          
+    if (datoRequerido(titulo) && datoRequerido(subTitulo) && datoRequerido(imagenPrincial)&& datoRequerido(desarrollo)&& datoRequerido(autor)) {
           const noticiaNueva = {
             titulo,
             subTitulo,
@@ -71,7 +68,7 @@ const CrearNoticia = (props) => {
       
       <Row className="bg-light pb-3">
         <Col>
-        <h3>Editar noticia</h3>
+        <h3>Crearr noticia</h3>
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Titulo de la noticia</Form.Label>
@@ -103,7 +100,7 @@ const CrearNoticia = (props) => {
             </Form.Group>
             <Form.Select aria-label="Default select example" onChange={(e)=>{setTipo(e.target.value)}}>
               <option value="">Seleccione una categoria</option>
-              {props.categorias.map((categoria)=>{return <option value={categoria.id}>{categoria.categoria}</option>})}
+              {props.categorias.map((categoria)=>{return <option value={categoria.categoria}>{categoria.categoria}</option>})}
             </Form.Select>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Firma Autor</Form.Label>

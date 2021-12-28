@@ -18,8 +18,8 @@ function App() {
   const [estaLogeado, setEstalLogeado] = useState();
   const [noticias, setNoticias] = useState([]);
   const [categorias, setCategorias] = useState([]);
-  const URLnoticias = "http://localhost:3004/noticias"
-  const URLcategorias = "http://localhost:3004/categorias"
+  const URLnoticias = "https://proyectofinal16igrupo2.herokuapp.com/apinoticias"
+  const URLcategorias = "https://proyectofinal16igrupo2.herokuapp.com/apicategoria"
   let checkLog = JSON.parse(localStorage.getItem("usuarioLogeado"));
  
 
@@ -44,7 +44,7 @@ function comparar ( a, b ){ return a.fecha - b.fecha }
       setCategorias(datos2);
 
     } catch (error) {
-      console.log(error);
+      console.log(error) ;
     }
   };
 

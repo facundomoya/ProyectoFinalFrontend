@@ -12,7 +12,7 @@ const EditarNoticia = (props) => {
     const [imagenPrincial, setImagenPrincial] = useState('');
     const [desarrollo, setDesarrollo] = useState('');
     const [autor, setAutor] = useState('');
-    const [tipo, setTipo] = useState('');
+    const [tipo, setTipo] = useState("");
     const [fecha, setFecha] = useState(0);
     const [fechaGuardar, setFechaGuardar] = useState('');
     const tituloNoticiaRef = useRef('');
@@ -20,9 +20,9 @@ const EditarNoticia = (props) => {
     const imagenPrincipalNoticiaRef = useRef('');
     const desarrolloNoticiaRef = useRef('');
     const autorNoticiaRef = useRef('');
-    const tipoNoticiaRef = useRef('');
+    const tipoNoticiaRef = useRef(0);
     const navigation = useNavigate();
-    const URL = 'http://localhost:3004/noticias' + "/"+ id;
+    const URL = 'https://proyectofinal16igrupo2.herokuapp.com/apinoticias' + "/"+ id;
 
 
 useEffect(async()=>{
@@ -70,6 +70,7 @@ useEffect(async()=>{
               headers: {"Content-Type" : "application/json"},
               body: JSON.stringify(noticiaNotificada)
             })
+            console.log(respuesta)
             if(respuesta.status === 200){
               //cartel para el usuario
           Swal.fire(
@@ -77,17 +78,15 @@ useEffect(async()=>{
             'La noticia fue actualizada correctamente',
             'success'
           )
-          // volver a consultar api
-           props.consultaAPI();
            navigation("/Perfil");
            }
-            props.consultaApi();
            }catch(error){
              console.log(error)
            }
     
         }else{
           //si hay un error, notificarlo
+         
         }
       };
 
@@ -131,7 +130,7 @@ useEffect(async()=>{
               </Form.Group>
               <Form.Select aria-label="Default select example" value={tipo} onChange={(e)=>{setTipo(e.target.value)}}>
                 <option value="">Seleccione una categoria</option>
-                {props.categorias.map((categoria)=>{return <option value={categoria.id}>{categoria.categoria}</option>})}
+                {props.categorias.map((categoria)=>{return <option value={categoria.categoria}>{categoria.categoria}</option>})}
               </Form.Select>
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                 <Form.Label>Firma Autor</Form.Label>

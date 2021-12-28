@@ -48,7 +48,7 @@ const PerfilAdmin = (props) => {
       return props.noticias.map((noticia) => (
         <ItemNoticia
           categorias={props.categorias}
-          key={noticia.id}
+          key={noticia._id}
           noticia={noticia}
           consultaAPI={props.consultaAPI}
         ></ItemNoticia>
@@ -62,7 +62,7 @@ const PerfilAdmin = (props) => {
       return nuevoArray.map((noticia) => (
         <ItemNoticia
           categorias={props.categorias}
-          key={noticia.id}
+          key={noticia._id}
           noticia={noticia}
           consultaAPI={props.consultaAPI}
         ></ItemNoticia>
@@ -125,7 +125,7 @@ const PerfilAdmin = (props) => {
         >
           <option value="0">Mostrar todas las categorias</option>
           {props.categorias.map((categoria) => {
-            return <option value={categoria.id}>{categoria.categoria}</option>;
+            return <option value={categoria.categoria}>{categoria.categoria}</option>;
           })}
         </Form.Select>
         <Button

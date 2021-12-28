@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { useState, useEffect } from "react";
-import { campoRequerido } from "../validaciones/helpers";
+import { campoRequerido, datoRequerido } from "../validaciones/helpers";
 
 function CrearUsuario() {
   var bcrypt = require("bcryptjs");
@@ -62,7 +62,7 @@ function CrearUsuario() {
     }
   }
   const crearUsuarioNuevo = async () => {
-    if (campoRequerido(nombre) && campoRequerido(contrasena) && campoRequerido(email) ) {
+    if (datoRequerido(nombre) && datoRequerido(contrasena) && datoRequerido(email) ) {
       if (validarNombreUsado(nombre)) {
         if (validarEmailUsado(email)) {
           const usuarioNuevo = {

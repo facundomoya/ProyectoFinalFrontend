@@ -29,7 +29,7 @@
       "imagenPrincial": "https://images.pexels.com/photos/8685786/pexels-photo-8685786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       "desarrollo": "titulo 69420",
       "autor": "Gonzalo Cainzo",
-      "tipo": "2",
+      "tipo": "Politica",
       "fecha": 1639692379014,
       "fechaGuardar": "Thu Dec 16 2021 19:06:19 GMT-0300 (hora estándar de Argentina)",
       "id": 63
@@ -187,6 +187,17 @@
       "fecha": 1640633336785,
       "fechaGuardar": "Mon Dec 27 2021 16:28:56 GMT-0300 (hora estándar de Argentina)",
       "id": 80
+    },
+    {
+      "titulo": "Este es el titulo de la noticia",
+      "subTitulo": "asdasdasda",
+      "imagenPrincial": "https://images.pexels.com/photos/6030108/pexels-photo-6030108.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "desarrollo": "asdasdasd",
+      "autor": "Gonzalo Cainzo",
+      "tipo": "Politica",
+      "fecha": 1640662312869,
+      "fechaGuardar": "Tue Dec 28 2021 00:31:52 GMT-0300 (hora estándar de Argentina)",
+      "id": 81
     }
   ],
   "categorias": [
@@ -229,6 +240,14 @@
     {
       "categoria": "caca",
       "id": 10
+    },
+    {
+      "categoria": "caca",
+      "id": 11
+    },
+    {
+      "categoria": "Este es el titulo de la categoria",
+      "id": 12
     }
   ]
 }
