@@ -11,39 +11,39 @@ const Footer = () => {
           <div className='col'>
             <h4>Informacion de contacto</h4>
             <ul className='list-unstyled'>
-              <li><i class="bi bi-whatsapp"></i> (0381)-152661535</li>
+              <li><i className="bi bi-whatsapp"></i> (0381)-152661535</li>
               <li><a
                 target="_blank"
                 className="text-decoration-none text-light"
                 href="https://goo.gl/maps/KoHzMiLqZQFKvdkX7"
               >
-                <i class="bi bi-geo-alt-fill"></i> Gral. Paz 576
+                <i className="bi bi-geo-alt-fill"></i> Gral. Paz 576
               </a></li>
-              <li><i class="bi bi-globe2"></i> Tucumán, Argentina</li>
+              <li><i className="bi bi-globe2"></i> Tucumán, Argentina</li>
             </ul>
           </div>
           {/* Column2 */}
           <div className='col'>
             <h4>Links utiles</h4>
-            <ui className='list-unstyled'>
+            <ul className='list-unstyled'>
               <li><Link to= '/error404' className='text-light text-decoration-none'>Politicas de privacidad</Link></li>
               <li><Link to= '/error404' className='text-light text-decoration-none'>Terminos y Condiciones</Link></li>
-            </ui>
+            </ul>
           </div>
           {/* Column3 */}
           <div className='col'>
             <h4>Seguinos en nuestras redes</h4>
-            <ui className='list-unstyled'>
+            <ul className='list-unstyled'>
               <li><Link to='/error404' className='text-light text-decoration-none'>
-                        <i class="bi bi-facebook"> Facebook</i>
+                        <i className="bi bi-facebook"> Facebook</i>
                         </Link></li>
               <li><Link to='/error404' className='text-light text-decoration-none'>
-                        <i class="bi bi-instagram"> Instagram</i>
+                        <i className="bi bi-instagram"> Instagram</i>
                     </Link></li>
               <li><Link to='/error404' className='text-light text-decoration-none'>
-                    <i class="bi bi-twitter"> Twitter</i>
+                    <i className="bi bi-twitter"> Twitter</i>
                     </Link></li>
-            </ui>
+            </ul>
           </div>
         </div>
         <hr />

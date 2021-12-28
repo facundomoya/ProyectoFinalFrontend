@@ -10,3 +10,6 @@ COSAS PARA EN NAVBAR DE MAxi CORDOBA
 
 reactBoostrap:
 BoostrapIcons:
+
+Gonzalo Villafañe
+npm i formik

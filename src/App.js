@@ -12,6 +12,7 @@ import { useState, useEffect } from "react";
 import CrearNoticia from "./components/pages/CrearNoticia";
 import CrearCategoria from "./components/pages/CrearCategoria";
 import EditarNoticia from "./components/pages/EditarNoticia";
+import Contacto from './components/pages/Contacto';
 
 function App() {
   const [estaLogeado, setEstalLogeado] = useState();
@@ -124,6 +125,7 @@ function comparar ( a, b ){ return a.fecha - b.fecha }
 
 
         <Route exact path="*" element={<Error404></Error404>}></Route>
+        <Route exact path="/contacto" element={<Contacto></Contacto>}></Route>
       </Routes>
       <Footer></Footer>
     </Router>

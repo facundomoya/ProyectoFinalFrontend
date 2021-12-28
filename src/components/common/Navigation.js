@@ -56,7 +56,7 @@ const mostrarAlgo = ()=>{
             </NavDropdown>
         </Nav>
         <Nav>
-          <Link to= '/' className='nav-link text-light'>Contacto</Link>
+          <Link to= '/contacto' className='nav-link text-light'>Contacto</Link>
           <Link to= '/' className='nav-link text-light'>Nosotros</Link>
           {mostrarAlgo()}
         </Nav>
