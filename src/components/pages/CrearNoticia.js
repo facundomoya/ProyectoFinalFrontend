@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Form, Button, Container, Row, Col, Image } from "react-bootstrap";
 import { campoRequerido, datoRequerido, validarEmail, validarUrl } from "../validaciones/helpers";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 
 const CrearNoticia = (props) => {
@@ -16,6 +18,7 @@ const CrearNoticia = (props) => {
   let current = new Date;
   let currentGuardar = current.valueOf();
   let date = current.toString();
+  const navigation = useNavigate();
   
 
   useEffect(() => {
@@ -54,14 +57,24 @@ const CrearNoticia = (props) => {
               body: JSON.stringify(noticiaNueva),
             };
             const repuesta = await fetch(URL, parametros);
-            console.log(repuesta);
+            if(repuesta.status === 201){
+              console.log('El producto se cargo correctamene')
+              Swal.fire(
+                'Nueva noticia creada',
+                'La noticia fue correctamente creada',
+                'success'
+              )
+              navigation("/Perfil");
+            }else{
+              console.log('La noticia no se creo correctamene')
+            }
           } catch (error) {
             console.log(error);
           }
-    } else {
-      console.log("hay campos incompletos");
+    }else{
+        console.log("hay campos incompletos");
     }
-  }
+};
 
   return (
     <Container className="text-start my-4">

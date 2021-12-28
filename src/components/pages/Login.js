@@ -2,6 +2,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Form, Button, Container, Row, Col, Image } from "react-bootstrap";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 function Login(props) {
   var bcrypt = require("bcryptjs");
@@ -9,6 +11,7 @@ function Login(props) {
   const [contrasenaIngresada, setContrasenaIngresada] = useState("");
   const [listaUsuarios, setListaUsuarios] = useState([]);
   const URL = process.env.REACT_APP_API_URL;
+  const navigation = useNavigate();
   let a = JSON.parse(localStorage.getItem("usuarioLogeado"));
 
   useEffect(() => {
@@ -26,7 +29,7 @@ function Login(props) {
       console.log(error);
     }
   };
-  const validarUsuario = (x) => {
+  const validarUsuario = (e,x) => {
     const a = listaUsuarios.find((b) => {
       if (b.nombre === x) {
         return b;
@@ -36,18 +39,43 @@ function Login(props) {
       bcrypt.compare(contrasenaIngresada, a.contrasena, function (err, res) {
         // res === true
         if (res === true) {
-          alert("Bienvenido " + a.nombre);
           localStorage.setItem(
             "usuarioLogeado",
             JSON.stringify(a)
           );
-          return a;
+          Swal.fire({
+            title: 'Bienvenido',
+            text: "Logueado correctamente!",
+            icon: 'success',
+            showCancelButton: false,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Confirmar'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              navigation("/Perfil");
+              window.location.reload(false)
+              
+            }
+          })
+        // return a;
+        
+      // window.location.reload(false);
         } else {
-          alert("contrasena invalida");
+          Swal.fire({
+            icon: 'error',
+            title: 'Contraseña invalidad',
+            text: 'La contraseña que ingreso es invalida!'
+          })
         }
       });
     } else {
-      alert("USUARIO INEXISTENTE");
+      e.preventDefault();
+      Swal.fire({
+        icon: 'error',
+        title: 'Usuario inexistente',
+        text: 'El usuario que ingreso no esta registrado!'
+      })
     }
   };
  
@@ -60,8 +88,8 @@ function Login(props) {
     e.preventDefault();
 
     //consultaAPI();
-    validarUsuario(usuarioIngresado);
-    window.location.reload(false);
+    validarUsuario(e,usuarioIngresado);
+   // window.location.reload(false);
     // console.log(validarUsuario(usuarioIngresado));
     //falta una funcion para redireccionar el usuario si es que se logeo correctamente
     // mientrastanto solo vamos a agregar un boton para deslogear

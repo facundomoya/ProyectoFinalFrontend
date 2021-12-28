@@ -2,6 +2,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import { campoRequerido, datoRequerido } from "../validaciones/helpers";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 function CrearUsuario() {
   var bcrypt = require("bcryptjs");
@@ -10,7 +12,7 @@ function CrearUsuario() {
   const [nombre, setNombre] = useState("");
   const [contrasena, setContrasena] = useState("");
   const [email, setEmail] = useState("");
-  
+  const navigation = useNavigate();
   const [administrador, setAdminitrador] = useState(false);
 
   useEffect(() => {
@@ -80,15 +82,32 @@ function CrearUsuario() {
               body: JSON.stringify(usuarioNuevo),
             };
             const repuesta = await fetch(URL, parametros);
+            if(repuesta.status === 201){
+              console.log('El producto se cargo correctamene')
+              Swal.fire(
+                'Usuario nuevo registrado',
+                'El usuario fue registrado existosamente',
+                'success'
+              )
+              navigation("/Inicio");
+            }
             console.log(repuesta);
           } catch (error) {
             console.log(error);
           }
         } else {
-          alert("el email ya esta en uso bro");
+          Swal.fire({
+            icon: 'error',
+            title: 'Email existente',
+            text: 'El email ya se encuentra registrado!',
+          })
         }
       } else {
-        alert("nombre de usuario ya existe, por favor eliga otro nombre bro");
+        Swal.fire({
+          icon: 'error',
+          title: 'Usuario existente',
+          text: 'El usuario ya existe, intenta con otro',
+        })
       }
     } else {
     }
