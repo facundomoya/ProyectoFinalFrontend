@@ -56,7 +56,6 @@ const mostrarCards =()=>{
                     <Image src={PublicidadCuadrada}className="w-100"></Image>
                     </Col>
                     <Image src={PublicidadLarga} className="mx-auto"></Image>
-                   
                 </Row>
             </Container>
         );
