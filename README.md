@@ -13,6 +13,7 @@ Este proyecto es un diario digital llamado Rolling News creado con React, React-
 [React-bootstrap](https://react-bootstrap.github.io/)
 [Formik](https://formik.org/)
 [React router](https://reactrouter.com/)
+[Bcryptjs](https://www.npmjs.com/package/bcryptjs)
 
 ## Autores
 
@@ -23,18 +24,18 @@ Este proyecto es un diario digital llamado Rolling News creado con React, React-
 - Villafañe Gonzalo
 
 
-Gonzalo cainzo : Login/registro/admin
+Gonzalo cainzo : 
+Login/registro/admin
 COSAS QUE HAY QUE INSTALAR ASI EL LOGIN / REGISTRO FUNCIONEN
 JsonServer : json-server --watch db.json --port 3004 
-ReactBoostrap:
-
+ReactBoostrap
 bcryp: npm install bcryptjs.
 
 
-COSAS PARA EN NAVBAR DE MAxi CORDOBA
+COSAS PARA EN NAVBAR DE MAXI CORDOBA
 
-reactBoostrap:
-BoostrapIcons:
+reactBoostrap
+BoostrapIcons
 
 Gonzalo Villafañe
 npm i formik
