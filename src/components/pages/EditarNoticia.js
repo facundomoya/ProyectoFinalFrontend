@@ -9,7 +9,7 @@ const EditarNoticia = (props) => {
     const {id} = useParams();
     const [titulo, setTitulo] = useState('');
     const [subTitulo, setSubTitulo] = useState('');
-    const [imagenPrincial, setImagenPrincial] = useState('');
+    const [imagenPrincipal, setImagenPrincipal] = useState('');
     const [desarrollo, setDesarrollo] = useState('');
     const [autor, setAutor] = useState('');
     const [tipo, setTipo] = useState("");
@@ -33,7 +33,7 @@ useEffect(async()=>{
             const dato = await repuesta.json();
             setTitulo(dato.titulo);
             setSubTitulo(dato.subTitulo);
-            setImagenPrincial(dato.imagenPrincial);
+            setImagenPrincipal(dato.imagenPrincipal);
             setDesarrollo(dato.desarrollo);
             setAutor(dato.autor);
             setTipo(dato.tipo);
@@ -58,7 +58,7 @@ useEffect(async()=>{
             const noticiaNotificada = {
               titulo: tituloNoticiaRef.current.value,
               subTitulo: subTituloNoticiaRef.current.value,
-              imagenPrincial: imagenPrincipalNoticiaRef.current.value,
+              imagenPrincipal: imagenPrincipalNoticiaRef.current.value,
               desarrollo: desarrolloNoticiaRef.current.value,
               autor: autorNoticiaRef.current.value,
               tipo: tipo,
@@ -114,8 +114,8 @@ useEffect(async()=>{
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                 <Form.Label>Imagen principal de la noticia</Form.Label>
                 <Form.Control type="text" placeholder="" 
-                defaultValue={imagenPrincial} ref={imagenPrincipalNoticiaRef}
-                onChange={(e) => { setImagenPrincial(e.target.value);}}
+                defaultValue={imagenPrincipal} ref={imagenPrincipalNoticiaRef}
+                onChange={(e) => { setImagenPrincipal(e.target.value);}}
                 onBlur={(e)=>{validarUrl(e.target)}}/>
               </Form.Group>
               <Form.Group

@@ -6,7 +6,7 @@ import { campoRequerido, datoRequerido, validarEmail, validarUrl } from "../vali
 const CrearNoticia = (props) => {
   const [titulo, setTitulo] = useState('');
   const [subTitulo, setSubTitulo] = useState('');
-  const [imagenPrincial, setImagenPrincial] = useState('');
+  const [imagenPrincipal, setImagenPrincipal] = useState('');
   const [desarrollo, setDesarrollo] = useState('');
   const [autor, setAutor] = useState('');
   const [tipo, setTipo] = useState('');
@@ -34,11 +34,11 @@ const CrearNoticia = (props) => {
     
   }
   const crearNoticia = async()=>{
-    if (datoRequerido(titulo) && datoRequerido(subTitulo) && datoRequerido(imagenPrincial)&& datoRequerido(desarrollo)&& datoRequerido(autor)) {
+    if (datoRequerido(titulo) && datoRequerido(subTitulo) && datoRequerido(imagenPrincipal)&& datoRequerido(desarrollo)&& datoRequerido(autor)) {
           const noticiaNueva = {
             titulo,
             subTitulo,
-            imagenPrincial,
+            imagenPrincipal,
             desarrollo,
             autor,
             tipo,
@@ -77,16 +77,16 @@ const CrearNoticia = (props) => {
               onBlur={(e)=>{campoRequerido(e.target)}}
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
               <Form.Label>Subtitulo o descripcion breve</Form.Label>
               <Form.Control type="text" placeholder="" 
-              onChange={(e) => {setSubTitulo(e.target.value);}} 
+              onChange={(e) => {setSubTitulo(e.target.value)}} 
               onBlur={(e)=>{campoRequerido(e.target)}}/>
             </Form.Group>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput3">
               <Form.Label>Imagen principal de la noticia</Form.Label>
               <Form.Control type="text" placeholder="" 
-              onChange={(e) => { setImagenPrincial(e.target.value);}}
+              onChange={(e) => {setImagenPrincipal(e.target.value)}}
               onBlur={(e)=>{validarUrl(e.target)}}/>
             </Form.Group>
             <Form.Group
@@ -102,7 +102,7 @@ const CrearNoticia = (props) => {
               <option value="">Seleccione una categoria</option>
               {props.categorias.map((categoria)=>{return <option value={categoria.categoria}>{categoria.categoria}</option>})}
             </Form.Select>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput4">
               <Form.Label>Firma Autor</Form.Label>
               <Form.Control type="text" placeholder="" 
               onChange={(e) => {setAutor(e.target.value)}}
@@ -122,7 +122,7 @@ const CrearNoticia = (props) => {
                   <Container className="text-start">
                   <h1 className="mt-5" >{titulo}</h1>
                   <h5>{subTitulo}</h5>
-                  <Image src={imagenPrincial} alt="imagen principal de la noticia" className="my-2 w-100"/>
+                  <Image src={imagenPrincipal} alt="imagen principal de la noticia" className="my-2 w-100"/>
                   <p className="text-start">{desarrollo}</p>
                   <p className="text-end mt-5 text-start">{autor}</p>
                   </Container>

@@ -30,24 +30,20 @@ function App() {
     
   }, []);
 ////// ordenar y filtrar array de noticias/////
-function comparar ( a, b ){ return a.fecha - b.fecha }
+function comparar ( a, b ){ return a.fecha - b.fecha };
 
-  const consultaAPI = async () => {
+const consultaAPI = async () => {
     try {
       const respuesta = await fetch(URLnoticias);
       const datos = await respuesta.json();
-
       setNoticias(datos);
-
       const respuesta2 = await fetch(URLcategorias);
       const datos2 = await respuesta2.json();
-
       setCategorias(datos2);
-
     } catch (error) {
       console.log(error) ;
     }
-  };
+};
 
   const mostrarUsuario = () => {
     if (checkLog !== null) {
@@ -110,7 +106,7 @@ function comparar ( a, b ){ return a.fecha - b.fecha }
     <Router>
       <Navigation />
       <Routes>
-        <Route exact path="/" element={<Inicio></Inicio>}></Route>
+        <Route exact path="/" element={<Inicio noticias={noticias} consultaAPI={consultaAPI}></Inicio>}></Route>
         <Route
           exact
           path="/CrearUsuario"
