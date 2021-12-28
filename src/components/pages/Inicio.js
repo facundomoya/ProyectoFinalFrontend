@@ -33,11 +33,11 @@ const mostrarCards =()=>{
 }
 
         return (
-            <Container className='text-center'>
+            <Container className='text-center '>
                 <h1>Rolling News</h1>
                 <h5>noticias principales</h5>
-                <CardGroup>
-                   {arrayDeNoticias.map((noticia)=><Cards key={noticia._id} noticia={noticia}></Cards>)} 
+                <CardGroup className="m-5">
+                   {arrayDeNoticias.map((noticia)=><Cards key={noticia._id} noticia={noticia} ></Cards>)} 
                 </CardGroup>
             </Container>
         );

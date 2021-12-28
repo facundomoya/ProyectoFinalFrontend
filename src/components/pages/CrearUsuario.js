@@ -89,7 +89,7 @@ function CrearUsuario() {
                 'El usuario fue registrado existosamente',
                 'success'
               )
-              navigation("/Inicio");
+              navigation("/");
             }
             console.log(repuesta);
           } catch (error) {

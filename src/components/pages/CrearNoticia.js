@@ -81,7 +81,7 @@ const CrearNoticia = (props) => {
       
       <Row className="bg-light pb-3">
         <Col>
-        <h3>Crearr noticia</h3>
+        <h3>Crear noticia</h3>
           <Form onSubmit={handleSubmit}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Titulo de la noticia</Form.Label>

@@ -14,6 +14,7 @@ import CrearCategoria from "./components/pages/CrearCategoria";
 import EditarNoticia from "./components/pages/EditarNoticia";
 import Contacto from './components/pages/Contacto';
 import Nosotros from './components/pages/Nosotros';
+import Noticia from "./components/pages/Noticia";
 
 function App() {
   const [estaLogeado, setEstalLogeado] = useState();
@@ -121,9 +122,10 @@ const consultaAPI = async () => {
         ></Route>
 
 
-        <Route exact path="/error404" element={<Error404></Error404>}></Route>
+        <Route exact path="/*" element={<Error404></Error404>}></Route>
         <Route exact path="/contacto" element={<Contacto></Contacto>}></Route>
         <Route exact path="/nosotros" element={<Nosotros></Nosotros>}></Route>
+        <Route exact path="/noticia/:id" element={<Noticia noticias={noticias} categorias={categorias} consultaAPI={consultaAPI}></Noticia>}></Route>
       </Routes>
       <Footer></Footer>
     </Router>

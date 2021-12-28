@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import '../../css/Inicio.css';
 
 const Cards = (props) => {
@@ -15,6 +16,8 @@ const Cards = (props) => {
     </Card.Body>
     <Card.Footer>
       <small className="text-muted">{props.noticia.fechaGuardar}</small>
+      <br />
+      <Link  to={`/noticia/${props.noticia._id}`}className='btn btn-sm btn-outline-secondary ms-2 px-4 text-center' >leer mas</Link>
     </Card.Footer>
   </Card>
     );
