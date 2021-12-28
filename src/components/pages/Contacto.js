@@ -8,7 +8,7 @@ const Contacto = () => {
   const [formularioEnv, cambiarFormularioEnv] = useState(false);
   return (
     <>
-      <Formik
+      <Formik className='container'
         initialValues={{
           nombre: "",
           correo: "",
