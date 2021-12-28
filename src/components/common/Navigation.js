@@ -57,7 +57,7 @@ const mostrarAlgo = ()=>{
         </Nav>
         <Nav>
           <Link to= '/contacto' className='nav-link text-light'>Contacto</Link>
-          <Link to= '/' className='nav-link text-light'>Nosotros</Link>
+          <Link to= '/nosotros' className='nav-link text-light'>Nosotros</Link>
           {mostrarAlgo()}
         </Nav>
         </Navbar.Collapse>
