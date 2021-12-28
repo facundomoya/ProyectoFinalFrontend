@@ -25,7 +25,7 @@ const PerfilAdmin = (props) => {
 
   useEffect(() => {
     props.consultaAPI();
-   // setNuevoArrayNoticias(props.noticias);
+    // setNuevoArrayNoticias(props.noticias);
   }, []);
 
   function comparar(a, b) {
@@ -43,47 +43,52 @@ const PerfilAdmin = (props) => {
       setOrdenarFecha(true);
     }
   };
-const mostrarTabla = ()=>{
-  if(filtrarCategoria === "0"){
-    return(props.noticias.map((noticia) => (
-      <ItemNoticia
-        categorias={props.categorias}
-        key={noticia.id}
-        noticia={noticia}
-        consultaAPI={props.consultaAPI}
-      ></ItemNoticia>)))
-  }else{
-    let nuevoArray = props.noticias.filter((x)=>{  
-      if(x.categoria === filtrarCategoria){
-        return x
-      }
-    });
-    return(nuevoArray.map((noticia) => (
-      <ItemNoticia
-        categorias={props.categorias}
-        key={noticia.id}
-        noticia={noticia}
-        consultaAPI={props.consultaAPI}
-      ></ItemNoticia>)))
-    console.log(nuevoArray);
-  }
-};
-  
+  const mostrarTabla = () => {
+    if (filtrarCategoria === "0") {
+      return props.noticias.map((noticia) => (
+        <ItemNoticia
+          categorias={props.categorias}
+          key={noticia.id}
+          noticia={noticia}
+          consultaAPI={props.consultaAPI}
+        ></ItemNoticia>
+      ));
+    } else {
+      let nuevoArray = props.noticias.filter((x) => {
+        if (x.tipo === filtrarCategoria) {
+          return x;
+        }
+      });
+      return nuevoArray.map((noticia) => (
+        <ItemNoticia
+          categorias={props.categorias}
+          key={noticia.id}
+          noticia={noticia}
+          consultaAPI={props.consultaAPI}
+        ></ItemNoticia>
+      ));
+    }
+  };
+  const handlerDeslogear = () => {
+    localStorage.clear();
+  };
 
   return (
     <Container className="my-5">
       <h1>BIENVENIDO AL PERFIL DE AMINISTRADOR</h1>
       <h3>
-        Aqui vas a poder  crear noticias, tambien ver y editar noticias que estan cargadas
-        en este sitio{" "}
+        Aqui vas a poder crear noticias, tambien ver y editar noticias que estan
+        cargadas en este sitio{" "}
       </h3>
 
       <div>
-        <Link
+        <Row>
+          <Col>
+          <Link
           to="/crearnoticia"
           variant="primary"
           type="submit"
-          className="mx-2"
+          className="btn btn-sm btn-outline-dark ms-2 px-4 text-center"
         >
           Crear noticia
         </Link>
@@ -91,11 +96,24 @@ const mostrarTabla = ()=>{
           to="/crearcategoria"
           variant="primary"
           type="submit"
-          className="mx-2"
+          className="btn btn-sm btn-outline-dark ms-2 px-4 text-center"
         >
           Crear categoria
         </Link>
-
+          </Col>
+          <Col className="text-end">
+            <Link
+              to="/"
+              className="btn btn-sm btn-outline-dark ms-2 px-4 text-center"
+              onClick={() => {
+                handlerDeslogear();
+              }}
+            >
+              Deslogear
+            </Link>
+          </Col>
+        </Row>
+       
       </div>
       <div className="text-end">
         <Form.Select
@@ -128,8 +146,7 @@ const mostrarTabla = ()=>{
               <th>Opciones</th>
             </tr>
           </thead>
-          <tbody>{mostrarTabla()}
-            </tbody>
+          <tbody>{mostrarTabla()}</tbody>
         </Table>
         <ListGroup></ListGroup>
       </div>
